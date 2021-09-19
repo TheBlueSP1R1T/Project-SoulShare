@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("music_studio.jpg");
+  min-height: 75%;
+}
+
+
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-text-light-blue w3-serif" style="font-size:17px">Project SoulShare</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">PROJECTS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">PERSONAL</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Header with image -->
+
+<header class="bgimg w3-display-container w3-red" id="home">
+  
+  <img src="/HTML Website Images/music_studio.jpg" style="width:100%;height:100%" class="w3-margin-top ">
+ 
+  <div class="w3-display-bottomleft w3-bottomleft w3-padding-large">
+    <span class="w3-text-white">No Background Knowledge</span>
+  </div>
+  <div class="w3-display-center w3-center w3-padding-large">
+    <span class="w3-text-white">No Music Theory</span>
+  </div>
+
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-sans-serif" style="font-size:88px">WE<br>ARE<br>MUSIC</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">No Correct Technique</span>
+  </div>
+</header>
+
+
+<div class="w3-display-center w3-center w3-padding-large w3-indigo">
+  <span class="w3-text-white">Let's create the tools that will innovate music.</span>
+</div>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-light-blue w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content w3-serif" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64 w3-san"><span class="w3-tag w3-wide">THE VISION</span></h5>
+    <p>From the time we are born, music is present in our lives. Whether it is through the radio, the whistling of a passer-by, the rhytmic ringing of a bell, or even the harmony produced by chimes blowing in the wind, music can be heard all around the globe at any moment. We are conditioned to absorb rhythm and harmony from day one. Thus, it is no surprise that almost every culture has taken to producing, sharing, and enjoying music of their own.</p>
+    <img src="/HTML Website Images/creator.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+    <p>Even without professional training, many of us have developed a sense of what sounds "good" and what does not. The truth is that all musical preferences are valid and necessary as music provides a medium through which we can express important ideas that sometimes can't be put into words. However, it is important to note that it is not a lack musical vision that is preventing a more inclusive enviornment for music production, but is instead a lack of the means necessary to do so. This being said, the capability for all of us to create and share our own music is overly burdened by the expense of acquiring musical education and technology, the rigid standards that define music, and the time required to adhere to said standards.</p>
+    <p>My vision for the near future is a culture more equipped with the tools necessary to affordably, easily, and effectively create and share music together. I believe everyone should have the ability to express their musical vision without first having to meet the exclusive requirements for entry. Providing the public with the devices capable of simplifying the music process will further our means of expression and give us a better understanding of eachother.</p>
+    <img src="/HTML Website Images/stevie.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Music is a world within itself, with a language we all understand."</i></p>
+      <p>Renowned Music Artist: Stevie Wonder</p>
+    </div>
+   <!--<p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>--> 
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Projects</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding w3-white">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Ideas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Inspirations</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card w3-sand">
+      <h5>LuminAI Software</h5>
+      <p class="w3-text-grey">Software in development by GA Tech project team that contains AI allowing a virtual character to dance naturally.</p><br>
+    
+      <h5>Unidentified</h5>
+      <p class="w3-text-grey">Software that converts any assigned sound to any other instruemnt digitally via a DAW.</p><br>
+    
+      <h5>Unidentified</h5>
+      <p class="w3-text-grey">Software that will display a virtual character dancing in sync to music performed by the user.</p><br>
+    
+      <h5>Unidentified</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>Unidentified</h5>
+      <p class="w3-text-grey"></p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card w3-black">
+      <h5>DONDA Stem Player</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>MPC AKAI Pad</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>Electric Keyboard</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>Electronic Drum-kit</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>DAWs</h5>
+      <p class="w3-text-grey"></p>
+    </div>  
+    <img src="/HTML Website Images/kids_making_music.jpg" style="width:100%;" class="w3-margin-top w3-display-center">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PERSONAL</span></h5>
+    <p>Here are some musical creations of my own.</p>
+    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">Other skills:</span> ...</p>
+    <p><strong>Your Ideas:</strong></p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Description" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND INSPIRATION</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p></a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
