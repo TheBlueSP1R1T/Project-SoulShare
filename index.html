@@ -20,10 +20,52 @@ body, html {
   min-height: 75%;
 }
 
+.center {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
 
 .menu {
   display: none;
 }
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  position: center;
+}
+
+.dropdown {
+  position: center;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 </style>
 
 <body>
@@ -145,26 +187,32 @@ body, html {
   <div class="w3-content w3-serif" style="max-width:700px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PERSONAL</span></h5>
     <p>I am a second-year student at Georgia Tech, and I am currently studying Computational Media with a concentration in Music Technolgy and Media. I am also minoring in Industrial Design. For at least the past 15 years, music has been an essential part of my interests, inspirtation, and identity. Everything I do, and everything I care to do professionally is for the sake of furthering music's capacity to bring people together. That's why I am putting together this website: an artifact for me to look back on when I've reached my goal.</p>
-    <br><img src="me_music.jpg" class="w3-image" style="width:100%">
-    <p><br><span class="w3-tag">Here are some creations of my own:</span></p>
-
-    <a href="https://github.gatech.edu/pages/nemory3/LMC-2700-Game-Project/">2D Sidescrolling Game<br></a>
-    <a href="https://www.youtube.com/watch?v=m3ImycPipVs">Old Guitar Videos<br></a>
-    <a href="https://www.youtube.com/watch?v=mE6fzyzz2PU">Guitar + Logic Performance<br></a>
-    <a href="https://www.youtube.com/watch?v=oXf6Vx9yAsk">Rap over "2SEATER" Beat<br></a>
     
-    <p>Title Screen Music for Video Game:</p>
-    <audio controls>
-      <source src="CM Game - Title Music 2.mp3" type="audio/mpeg">
-    </audio>
-    <p>Rap over Type Beat:</p>
-    <audio controls>
-      <source src="download.mp3" type="audio/mpeg">
-    </audio>
-    <p>Rap over Friend's Beat:</p>
-    <audio controls>
-      <source src="meow 2.mp3" type="audio/mpeg">
-    </audio>
+    <div class="w3-container center dropdown">
+      <button class="dropbtn center">Here are some creations of my own:</button>
+      <div class="dropdown-content">
+        <a href="https://github.gatech.edu/pages/nemory3/LMC-2700-Game-Project/">2D Sidescrolling Game<br></a>
+        <a href="https://www.youtube.com/watch?v=m3ImycPipVs">Old Guitar Videos<br></a>
+        <a href="https://www.youtube.com/watch?v=mE6fzyzz2PU">Guitar + Logic Performance<br></a>
+        <a href="https://www.youtube.com/watch?v=oXf6Vx9yAsk">Rap over "2SEATER" Beat<br></a>
+        
+        <p>Title Screen Music for Video Game:</p>
+        <audio controls>
+          <source src="CM Game - Title Music 2.mp3" type="audio/mpeg">
+        </audio>
+        <p>Rap over Type Beat:</p>
+        <audio controls>
+          <source src="download.mp3" type="audio/mpeg">
+        </audio>
+        <p>Rap over Friend's Beat:</p>
+        <audio controls>
+          <source src="meow 2.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div> <br>
+
+    <br><img src="me_music.jpg" class="w3-image" style="width:100%"><br>
+
     <p><strong>Your Ideas:</strong></p>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
